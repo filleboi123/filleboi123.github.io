@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IF=edge">
+    <meta name="viewport" content="width=device-width, initial scale=1.0">
+    <title> filips pojkar</title>
+    <link href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+        
+    <header>
+
+        <div class="cart-ex">
+            <h2 class="cart-title">Your Cart</h2>
+
+            <!-- content -->
+            <div class="cart-content">
+
+            </div>
+            <!-- total -->
+            <div class="total">
+                <div class="total-title">Total</div>
+                <div class="total-price">0kr</div>
+            </div>
+
+            <!-- Buy Button -->
+            <button type="button" class="btn-buy">Buy Now</button>
+            
+            <!-- Cart Close -->
+            <i id="close-cart" class="far fa-times close-cart"></i>
+    
+        </div>
+    
+    
+        </header>
+    
+        <section id="header">
+            <a href="#"><img src="img/Logo2.png" class="logo" alt=""></a>
+
+            <div>
+                <ul id="navbar">
+                    <li> <a href="index.html">Home</a></li>
+                    <li> <a class="active" href="shop.html">Shop</a></li>
+                    <li> <a href="blog.html">Blog</a></li>
+                    <li> <a href="about.html">About</a></li>
+                    <li> <a href="contact.html">Contact</a></li>
+                  
+                    <i class="far fa-times" id="close"></i>
+
+                    <i class="far fa-shopping-bag cart-icon mobile-cart" id="cart-icon"></i>
+                </ul>
+            </div>
+
+            
+
+            <div id="mobile">
+                <i class="far fa-shopping-bag cart-icon" id="cart-icon"></i>
+                <i id="bar" class="fas fa-outdent"></i>
+            </div>
+        </section>
+
+        <section id="page-header">
+            <h2>#shop</h2>
+            <p>Save more with coupons & up to 70% off!</p>
+      
+        </section>
+
+        <section id="pagination" class="section-p1">
+            <a href="shop.html">1</a>
+            <a href="#">2</a>
+            <a href="#"><i class="fal fa-long-arrow-alt-right"></i></a>
+
+            <style>
+                #pagination{
+                    margin-top: 35px;
+                }
+            </style>
+        
+        </section>
+
+        <section id="newsletter" class="section-p1 section-m1">
+            <div class="newstext">
+                <h4>Sign Up For Our Newsletter</h4>
+                <p>Get E-mail updates about our latest shop and <span>special offers</span></p>
+            </div>
+            <div class="form"><input type="text" placeholder="Your email address">
+            <button class="normal">Sign Up</button>
+            </div>
+        </section>
+
+        <footer class="section-p1">
+            <div class="col">
+                <img class="logo" src="img/Logo2.png" alt="">
+                <h4>Contact</h4>
+                <p><strong>Address</strong> 562 Wellington Road Street 32 San Fransisco</p>
+                <p><strong>Phone</strong> +46 0700 334 863</p>
+                <p><strong>Hours</strong> 16-20 Monday-Friday 00-00 Weekends</p>
+                <div class="follow">
+                    <h4>Follow Us</h4>
+                    <div class="icon"> 
+                        <i class="fab fa-facebook-f"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-youtube"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <h4>About</h4>
+                <a href="#">About Us</a>
+                <a href="#">Delivery Information</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms & Conditions</a>
+                <a href="#">Contact Us</a>
+            </div>
+
+            <div class="col">
+                <h4>My Account</h4>
+                <a href="#">Sign In</a>
+                <a href="#">View Cart</a>
+                <a href="#">My Wishlist</a>
+                <a href="#">Track My Order</a>
+                <a href="#">Help</a>
+            </div>
+            
+            <div class="col install">
+                <h4>Install App</h4>
+                <p>From App Store or Google Play</p>
+                <div class="row">
+                    <img src="img/pay/app.jpg" alt="">
+                    <img src="img/pay/play.jpg" alt="">
+                </div>
+                <p>Secured Payment Gateway</p>
+                <img src="img/pay/pay.png" alt="">
+            </div>    
+
+            <div class="copyright">
+               <p>© 2022, Filips Pojkar etc </p> 
+
+            </div>
+            
+
+
+        </footer>
+
+        <section id="alert">
+            <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+            <div class="alert hide">
+                <span class="fa fa-exclamation-circle"></span>
+                <span class="msg">Added to cart!</span>
+                <span class="close-btn">
+                    <span class="fas fa-times"></span>
+                </span>
+            </div>
+
+            <script>
+                $(".shop-cart").click(function(){
+                    $('.alert').removeClass('hide');
+                    $('.alert').addClass('show');
+                    $('.alert').addClass('showAlert');
+                    setTimeout(function(){
+                         $('.alert').addClass('hide');
+                    $('.alert').removeClass('show');
+
+                    },1000); 
+                });
+                $('.close-btn').click(function(){
+                    $('.alert').addClass('hide');
+                    $('.alert').removeClass('show');
+                });
+
+                
+                
+            </script>
+
+            
+        </section>
+        
+        
+    <script src="script.js"></script>
+</body>
+
+</html>
